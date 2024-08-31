@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Hello World Function
+Resources:
+  lambdasftp:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Description: ''
+      MemorySize: 1024
+      Timeout: 30
+      Handler: bootstrap
+      Runtime: provided.al2023
+      CodeUri: ./
+      Architectures:
+        - x86_64
